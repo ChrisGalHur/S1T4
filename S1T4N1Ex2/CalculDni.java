@@ -2,11 +2,16 @@ package S1T4N1Ex2;
 
 public class CalculDni {
 
-	public static String calcularLetra(int numSinLetra) {
+	public static char calcularLletra(double numSinLetra) {
+		int restaDiv;
+		numSinLetra = (int)numSinLetra;
+		String lletrasDni = "TRWAGMYFPDXBNJZSQVHLCKE";
 		
-		if(numSinLetra
-		
-		
-		return null;
+		restaDiv = (int) (numSinLetra % 23);
+		char lletra = lletrasDni.charAt(restaDiv);
+
+		return lletra;
 	}
+	
+	
 }

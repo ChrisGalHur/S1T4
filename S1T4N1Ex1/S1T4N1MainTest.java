@@ -15,12 +15,15 @@ class S1T4N1MainTest {
 		
 		String modificado[] = AñadirMeses.añadirMeses(inicial);
 		int actual = modificado.length;
-		assertArrayEquals(esperado, actual);;
+		assertEquals(esperado, actual);
 	}
-
-	private void assertArrayEquals(int esperado, int actual) {
-		// TODO Auto-generated method stub
+	
+	@Test
+	void arrayNulla() {
+		String nulla[] = new String[12];
 		
+		nulla = AñadirMeses.añadirMeses(nulla);
+		assertNotNull(nulla);
 	}
 	
 	@Test

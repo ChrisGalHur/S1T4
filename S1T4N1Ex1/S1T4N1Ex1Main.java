@@ -3,7 +3,7 @@ package S1T4N1Ex1;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class S1T4N1Main {
+public class S1T4N1Ex1Main {
 
 	public static void main(String[] args) {
 		/*- Exercici 1

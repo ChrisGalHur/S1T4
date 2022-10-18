@@ -10,38 +10,34 @@ public class S1T4N1Ex2Main {
 	
 		/*- Exercici 2
 		Crea una classe anomenada CalculoDni que calculi la lletra del DNI en rebre el número com a paràmetre.
-		Crea una classe jUnit que verifiqui el seu correcte funcionament,
-		parametritzant-la perquè el test rebi un espectre de dades ampli i validi si el càlcul és correcte per a 10 números de DNI predefinits.*/
+		Crea una classe jUnit que verifiqui el seu correcte funcionament, parametritzant-la perquè el test rebi un espectre de dades ampli i validi si el càlcul és correcte per a 10 números de DNI predefinits.*/
+		int numSenseLletra;
+		char letraDni;
 		
-		String msje = dni();
+		numSenseLletra = dniCorrecte();
+		letraDni = CalculDni.calcularLletra(numSenseLletra);
 		
-		
-		
+		System.out.println("El teu DNI complet es " + numSenseLletra + letraDni);
 	}
 	
-	public static boolean comprobarNumeroValido(Integer iNumero) {
-		boolean cantidadCorrecta;
-		String x = Integer.toString(iNumero);
-		if
-		
-		return cantidadCorrecta;
-	}
 
-	public static String dni() {
-		int numDni;
-		boolean numVale, dniCorrecto;
+	public static int dniCorrecte() {
+		double numDni;
+		boolean dniCorrecte = false;
 		
 		do {
-			System.out.println("Introduce el numero de DNI:");
-			numDni = scan.nextInt();
-			numVale = comprobarNumeroValido(numDni);
-			if(numVale = true) {
+			System.out.println("Introdueix el número de DNI:");
+			numDni = scan.nextDouble();
 			
+			if((int)(Math.log10(numDni)+1) == 8){
+				dniCorrecte = true;
 			}else {
-			
+				System.out.println("No es un número de DNI correcte.\n");
 			}
-		}while(dniCorrecto = false);
+		}while(dniCorrecte != true);
 		
-		return "";
+		return (int)numDni;
 	}
+	
+	
 }
