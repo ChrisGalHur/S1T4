@@ -20,25 +20,22 @@ public class S1T4N2Ex1Main {
 		match () / matchesSafely (). Utilitza el seu comparador personalitzat en una prova per a comprovar si la cadena "Mordor" té una longitud de 8.
 		Ajusta la prova si és necessari.*/
 
-		Pattern p = Pattern.Pattern;     // pattern
-        Matcher m = p.matcher("abaaaba"); // source
-        while (m.find()) {
-                System.out.print(m.start() + " ");
-        }
+//		Pattern p = Pattern.Pattern;     // pattern
+//        Matcher m = p.matcher("abaaaba"); // source
+//        while (m.find()) {
+//                System.out.print(m.start() + " ");
+//        }
 	}
 
-	public static String enviarParaula() {
-		String paraula = "Mordor";
-		return paraula;
-	}
 	
-	public static Matcher<String> length(Matcher<? super Integer> matcher) {
-	    return new FeatureMatcher<String, Integer>(matcher, "a String of length that", "length") {
-	        @Override
-	        protected Integer featureValueOf(String actual) {
-	            return actual.length();
-	        }
-	    };
-	}
+	
+//	public static Matcher<String> length(Matcher<? super Integer> matcher) {
+//	    return new FeatureMatcher<String, Integer>(matcher, "a String of length that", "length") {
+//	        @Override
+//	        protected Integer featureValueOf(String actual) {
+//	            return actual.length();
+//	        }
+//	    };
+//	}
 	
 }
