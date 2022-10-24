@@ -12,24 +12,14 @@ class S1T4N2Ex1MainTest {
 	@Test
 	void EnviarParaulaTest() {
 //		try {
-			MatcherAssert.assertThat(EnviarParaula.enviarParaula(),length(is(8)));
+			MatcherAssert.assertThat(S1T4N2Ex1Main.enviarParaula(),length(is(8)));//Importem la llibrería de hamcret per poder tenir els Matchers y comparar amb més facilitat per la llectura del codi 
 //        } catch (AssertionError EssertErr) {
 //            System.out.println("La palabra no tiene 8 letras\n" + isex.getMessage());
 //        }
 	}
 	
-//	public static FeatureMatcher <String, Integer> lenght(Matcher<? super Integer> matcher){
-//		return new Feature
-//		
-//		@Override 
-//		protected abstract String featureValueOf(String paraula) {
-//			return 
-//		}
-//			
-//	}
-
-	public static  FeatureMatcher<String, Integer> length(Matcher<? super Integer> matcher ){
-        return new FeatureMatcher<String, Integer>(matcher, "La longitud escrita es ", "longitud real") {
+	public static  FeatureMatcher<String, Integer> length(Matcher<? super Integer> matcher ){//Utilizem la classe FeatureMatcher per dirlo que ha de comparar la llargaria de un String
+        return new FeatureMatcher<String, Integer>(matcher, "La longitud escrita ", "La longitud real ") {//Li donem el dos missatges, del que se ens demana y el que es
             @Override
             protected Integer featureValueOf(String actual) {
               return actual.length();
