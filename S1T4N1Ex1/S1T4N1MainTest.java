@@ -31,8 +31,9 @@ class S1T4N1MainTest {
 		String mesesTest[] = new String[12];
 		mesesTest = AñadirMeses.añadirMeses(mesesTest);
 		for (String Busca : mesesTest) {
-			Busca.equals("Agosto");
+			Busca.equals("Agost5");
 		}
+		//Añadir Assert
 	}
 
 }

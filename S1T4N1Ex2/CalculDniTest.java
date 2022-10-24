@@ -38,7 +38,6 @@ class CalculDniTest {
 	
 	@Test
 	void testcalcularLletra() {
-		int cantParametros = 10;
 		Map<Integer, Character> ambLletra = dniDades();
 		ArrayList<Integer> claus = dniSolNum();
 		
