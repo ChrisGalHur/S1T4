@@ -12,7 +12,7 @@ class S1T4N2Ex1MainTest {
 	@Test
 	void EnviarParaulaTest() {
 //		try {
-			MatcherAssert.assertThat(S1T4N2Ex1Main.enviarParaula(),length(is(8)));//Importem la llibrería de hamcret per poder tenir els Matchers y comparar amb més facilitat per la llectura del codi 
+			MatcherAssert.assertThat(S1T4N2Ex1Main.enviarParaula(),length(is(6)));//Importem la llibrería de hamcret per poder tenir els Matchers y comparar amb més facilitat per la llectura del codi 
 //        } catch (AssertionError EssertErr) {
 //            System.out.println("La palabra no tiene 8 letras\n" + isex.getMessage());
 //        }
@@ -25,8 +25,6 @@ class S1T4N2Ex1MainTest {
               return actual.length();
             }
         };
-    }
-
-	
+    }	
 	
 }
